@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddGame"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!-- First Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="391dp"
+                android:layout_height="611dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="13dp"
+                android:background="@color/black"
+                android:backgroundTint="@color/white"
+                android:isScrollContainer="false"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:outlineProvider="background"
+
+                android:outlineSpotShadowColor="@color/blue">
+
+
+                <Button
+                    android:id="@+id/goBackToYourGamesFromAddGames"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableTop="@drawable/baseline_arrow_back_24"
+                    tools:ignore="MissingConstraints" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="376dp"
+                    android:layout_height="111dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_gravity="center|right"
+                    android:hint="Skriv här ditt spel som du söker"
+                    
+                    android:textAlignment="center" />
+
+
+                <EditText
+                    android:id="@+id/gameId"
+                    android:layout_width="379dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="100dp"
+                    android:focusedSearchResultHighlightColor="@color/white"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:hint="Skriv vad du tycker här på engelska"
+                    android:textAlignment="center"
+                    android:shadowColor="@color/white"
+                    android:textColor="@color/black" />
+
+                <RatingBar
+                    android:id="@+id/ratingbarGame"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="bottom|center"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@color/white"
+                    android:progressTint="@color/blue"
+                    android:stepSize="0.1"
+                    android:rating="0"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    android:transformPivotX="120dp"
+                    android:transformPivotY="30dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewAddGameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:text="   "
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:id="@+id/buttonGameDetail"
+                android:layout_width="407dp"
+                android:layout_height="67dp"
+                android:text="Lägg in spel och recession"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="649dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tvActivity"
+        android:layout_width="196dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="80dp"
+        android:drawableTop="@drawable/baseline_foldergame_24_"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Lägg till spel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

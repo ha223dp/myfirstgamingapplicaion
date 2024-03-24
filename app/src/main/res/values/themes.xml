@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MittProjekt" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorOnPrimaryFixedVariant">@color/blue</item>
+        -->
+        <item name="android:statusBarColor">@color/blue</item>
+        -->
+
+    </style>
+
+    <style name="Theme.MittProjekt" parent="Base.Theme.MittProjekt" />
+
+    <style name="App.Customer.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/yellow</item>
+
+    </style>
+
+    <style name="ThemeOverlay.MittProjekt.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+
+</resources>

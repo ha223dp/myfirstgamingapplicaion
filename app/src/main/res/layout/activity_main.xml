@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:itemActiveIndicatorStyle="@style/App.Customer.Indicator"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivity">
+
+
+        <FrameLayout
+            android:id="@+id/gameFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/friendsFrameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="50dp"
+                android:text="Dina spel:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/gamesScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <ImageButton
+                        android:id="@+id/ImageButtonMain1"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/header1"
+                        tools:layout_editor_absoluteX="318dp"
+                        tools:layout_editor_absoluteY="556dp"/>
+
+                    <ImageButton
+                        android:id="@+id/ImageButtonMain2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginRight="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/ofmeaw2khrdaezajw1f3tcixbogklptc"
+                        tools:layout_editor_absoluteX="158dp"
+                        tools:layout_editor_absoluteY="276dp" />
+
+                    <ImageButton
+                        android:id="@+id/ImageButtonMain3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginRight="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/_4s9dovjzhha0oe8o8wax88s" />
+
+                    <ImageButton
+                        android:id="@+id/ImageButtonMain4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginRight="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/egs_ittakestwo_hazelight_s2_1200x1600_5c82de2d2e21a841dd06ec27e082777e_1200x1600_5c82de2d2e21a841dd06ec27e082777e" />
+
+                    <ImageButton
+                        android:id="@+id/ImageButtonMain5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginRight="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/_160avzio4s__ac_uf1000_1000_ql80_" />
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/friendsFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/reviewFrameLayout"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:text="Dina vänner:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="141dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/friendScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain20"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitStart"
+                                android:src="@drawable/profilpic3"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="GamerBoy2"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain12"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:src="@drawable/kratosprofilpic"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="Arg pappa"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain21"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/s0u1qmhwg6c21"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="Mikes 2"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain22"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitStart"
+                                android:src="@drawable/profilpic3"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="YesMan"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain23"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:src="@drawable/kratosprofilpic"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="Den Emil"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonMain24"
+                                android:layout_width="75dp"
+                                android:layout_height="71dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/s0u1qmhwg6c21"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+
+                                android:text="Harambe"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/reviewFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:text="Dina omdömen:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/reviewScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    tools:ignore="ExtraText">
+
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonMain30"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/header1"
+                        tools:layout_editor_absoluteX="318dp"
+                        tools:layout_editor_absoluteY="556dp" />
+
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonMain31"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ofmeaw2khrdaezajw1f3tcixbogklptc"
+                        tools:layout_editor_absoluteX="150dp"
+                        tools:layout_editor_absoluteY="556dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonMain32"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/_4s9dovjzhha0oe8o8wax88s"
+                        tools:layout_editor_absoluteY="556dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonMain33"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/egs_ittakestwo_hazelight_s2_1200x1600_5c82de2d2e21a841dd06ec27e082777e_1200x1600_5c82de2d2e21a841dd06ec27e082777e"
+                        tools:layout_editor_absoluteY="556dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonMain34"
+                        android:layout_width="93dp"
+                        android:layout_height="59dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/_160avzio4s__ac_uf1000_1000_ql80_"
+                        tools:layout_editor_absoluteY="556dp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvActivity"
+        android:layout_width="196dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="80dp"
+        android:drawableTop="@drawable/baseline_personprofil_24"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Användare"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

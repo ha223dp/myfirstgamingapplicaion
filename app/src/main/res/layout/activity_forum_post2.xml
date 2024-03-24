@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Forum"
+    tools:ignore="MissingDefaultResource">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!-- First Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="666dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="13dp"
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+
+                android:isScrollContainer="false">
+
+
+                <ImageView
+                    android:id="@+id/imageButton_your_games"
+                    android:layout_width="400dp"
+                    android:layout_height="136dp"
+                    android:adjustViewBounds="true"
+                    android:drawableTop="@drawable/baseline_personprofil_24"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ofmeaw2khrdaezajw1f3tcixbogklptc" />
+
+
+                <TextView
+                    android:layout_width="362dp"
+                    android:layout_height="194dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="40dp"
+                    android:text="Dark Souls 3 är det senaste tillskottet i den hyllade Dark Souls-spelserien utvecklad av FromSoftware. Spelet släpptes ursprungligen år 2016 och har sedan dess fått stor uppskattning från både kritiker och spelare världen över.
+I Dark Souls 3 kastas spelarna in i en mörk och dystopisk värld fylld av faror och utmaningar. Med dess karakteristiska svårighetsgrad."
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/goBackForum2"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/baseline_arrow_back_24"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

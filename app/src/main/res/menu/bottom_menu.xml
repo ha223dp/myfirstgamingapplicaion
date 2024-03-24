@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_home"
+        android:title="Your profil"
+        android:icon="@drawable/baseline_personprofil_24"/>
+
+    <item android:id="@+id/bottom_search"
+        android:title="Search"
+        android:icon="@drawable/baseline_content_paste_search_24"/>
+
+    <item android:id="@+id/bottom_friends"
+        android:title="Friends"
+        android:icon="@drawable/baseline_peoplefriends_24"/>
+
+    <item android:id="@+id/bottom_yourGames"
+        android:title="Your games"
+        android:icon="@drawable/baseline_folder_24"/>
+
+    <item android:id="@+id/bottom_forum"
+        android:title="Forum"
+        android:icon="@drawable/baseline_connect_without_contact_24"/>
+
+
+</menu>
